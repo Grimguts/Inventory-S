@@ -10,5 +10,6 @@ func main() {
 		http.ServeFile(w, r, "index.html")
 	})
 
+	http.Handle("/public/", http.StripPrefix("/public/", http.FileServer(http.Dir("public"))))
 	http.ListenAndServe(":3000", nil)
 }
