@@ -27,3 +27,8 @@ At the top you will see, Go by lukehoban, select and install that one.
 Install and update Gitbash for a command prompt type console.
 
 go get -v golang.org/x/net/websocket
+
+--------------------------------------------------------------------------------------------------
+to auto refresh webservers
+go get github.com/pilu/fresh
+
